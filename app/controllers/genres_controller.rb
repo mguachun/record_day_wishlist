@@ -7,9 +7,12 @@ class GenresController < ApplicationController
     end
 
     def show
+        render json: @genre,
+        except: [:created_at, :updated_at]
     end
 
     def destroy
+        @genre.destroy
     end
 
 end
