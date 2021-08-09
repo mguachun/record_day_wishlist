@@ -11,9 +11,9 @@ Album.destroy_all
 genres = Genre.create!([{ name: 'rock' }, { name: 'jazz' }, { name: 'metal' }, { name: 'country' }, { name: 'hip-hop'}, { name: 'pop'}, 
 { name: 'r&b'}, { name: 'punk'}, { name: 'soul'}, { name: 'disco'}, { name: 'folk'}])
 
-albums = Album.create!([{ title: 'The Dark Side of the Moon', artist: 'Pink Floyd', year: '1973', genre_id: 34}, { title: 'Come On Over', artist: 'Shania Twain', year: '1997',  genre_id: 37},
-{ title: 'The Immaculate Collection', artist: 'Madonna', year: '1990',  genre_id: 39}, { title: 'Born in the U.S.A', artist: 'Bruce Springsteen', year: '1984',  genre_id: 34},
-{ title: 'Nevermind', artist: 'Nirvana', year: '1991',  genre_id: 34}, { title: '...Baby One More Time', artist: 'Britney Spears', year: '1999',  genre_id: 34}, 
-{ title: 'Bridge over Troubled Water', artist: 'Simon & Garfunkel', year: '1970',  genre_id: 44}, { title: 'Purple Rain', artist: 'Prince and the Revolution', year: '1984',  genre_id: 39},
-{ title: 'The Marshall Mathers LP', artist: 'Eminem', year: '2000',  genre_id: 38}, { title: 'The Miseducation of Lauryn Hill', artist: 'Lauryn Hill', year: '1998',  genre_id: 42},
-{ title: 'Daydream', artist: 'Mariah Carey', year: '1995',  genre_id: 40}, { title: 'Faith', artist: 'George Michaels', year: '1987',  genre_id: 39} ])
+albums = Album.create!([{ title: 'The Dark Side of the Moon', artist: 'Pink Floyd', year: '1973', genre_id: 1}, { title: 'Come On Over', artist: 'Shania Twain', year: '1997',  genre_id: 4},
+{ title: 'The Immaculate Collection', artist: 'Madonna', year: '1990',  genre_id: 6}, { title: 'Born in the U.S.A', artist: 'Bruce Springsteen', year: '1984',  genre_id: 1},
+{ title: 'Nevermind', artist: 'Nirvana', year: '1991',  genre_id: 1}, { title: '...Baby One More Time', artist: 'Britney Spears', year: '1999',  genre_id: 6}, 
+{ title: 'Bridge over Troubled Water', artist: 'Simon & Garfunkel', year: '1970',  genre_id: 11}, { title: 'Purple Rain', artist: 'Prince and the Revolution', year: '1984',  genre_id: 6},
+{ title: 'The Marshall Mathers LP', artist: 'Eminem', year: '2000',  genre_id: 5}, { title: 'The Miseducation of Lauryn Hill', artist: 'Lauryn Hill', year: '1998',  genre_id: 8},
+{ title: 'Daydream', artist: 'Mariah Carey', year: '1995',  genre_id: 6}, { title: 'Faith', artist: 'George Michaels', year: '1987',  genre_id: 6} ])
