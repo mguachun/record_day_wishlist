@@ -20,15 +20,6 @@ class AlbumsController < ApplicationController
         end
     end
 
-    def update
-        @album.update(album_params)
-        if @album.save
-            render json: @album,
-            except: [:created_at, :updated_at]
-        else 
-            render json: {message: 'Unable to edit album.'}
-    end
-
     def destroy
         @album.destroy
     end
