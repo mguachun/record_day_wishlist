@@ -6,6 +6,7 @@ class GenresController < ApplicationController
     end
 
     def show
+        genre = Genre.find(params[:id])
         render json: @genre,
         except: [:created_at, :updated_at]
     end
