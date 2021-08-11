@@ -24,7 +24,7 @@ class AlbumsController < ApplicationController
     def destroy
         set_album
         @album.destroy
-        render json{message: 'Album successfully deleted.'}
+        render json: {message: 'Album successfully deleted.'}
     end
 
     private
