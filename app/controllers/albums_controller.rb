@@ -6,7 +6,6 @@ class AlbumsController < ApplicationController
     end
 
     def show
-        set_album
         render json: @albums,
         except: [:created_at, :updated_at]
     end
@@ -22,7 +21,7 @@ class AlbumsController < ApplicationController
     end
 
     def destroy
-        set_album
+    
         @album.destroy
         render json: {message: 'Album successfully deleted.'}
     end
