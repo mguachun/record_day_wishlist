@@ -74,13 +74,14 @@ GEM
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     erubi (1.10.0)
-    fast_jsonapi (1.5)
-      activesupport (>= 4.2)
     ffi (1.15.3)
     globalid (0.5.1)
       activesupport (>= 5.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.11.5)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     jsonapi-renderer (0.2.2)
     listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -162,7 +163,7 @@ DEPENDENCIES
   active_model_serializers
   bootsnap (>= 1.4.4)
   byebug
-  fast_jsonapi
+  jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
